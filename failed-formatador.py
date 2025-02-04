@@ -44,7 +44,6 @@ def process_json(json_file, start_date, end_date):
     end_date = pd.to_datetime(end_date, format='%d/%m/%Y')
 
     df = df[(df['logged_at'] >= start_date) & (df['logged_at'] <= end_date)]
-
     return df
 
 # Interface Streamlit
