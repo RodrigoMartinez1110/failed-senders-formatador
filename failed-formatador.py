@@ -45,7 +45,6 @@ def process_json(json_file, start_date, end_date):
 
     df = df[(df['logged_at'] >= start_date) & (df['logged_at'] <= end_date)]
 
-    df = df[['Number', 'name', 'error', 'idHubNegocio', 'chip_resgate', 'logged_at']]
     return df
 
 # Interface Streamlit
